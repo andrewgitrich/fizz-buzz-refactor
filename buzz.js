@@ -1,0 +1,9 @@
+
+prompt("enter a number")
+
+
+
+
+
+
+
