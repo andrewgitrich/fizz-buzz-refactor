@@ -26,9 +26,15 @@ function counter(num){
 
 //press a button to run the function called counter, 
 //pass the value/argument from input field into the function
-//not sure if parseInt() is working
 $("#myButton").click(function(){
-	counter(parseInt($("#formValue").val()));
+	if(parseInt($("#formValue").val())){
+		counter(parseInt($("#formValue").val()));
+	}
+
+	else{
+		alert("this is not a number");
+	}
+	
 });
 
 
