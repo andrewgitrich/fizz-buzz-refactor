@@ -24,13 +24,16 @@ function counter(num){
 }
 
 
-//press a button to run the function called counter, 
-//pass the value/argument from input field into the function
+//press a button to run the function called counter,
 $("#myButton").click(function(){
-	if(parseInt($("#formValue").val())){
-		counter(parseInt($("#formValue").val()));
-	}
 
+	//validate user input 
+	if(parseInt($("#formValue").val())){
+		
+		//pass the value/argument from input field into the function
+		counter($("#formValue").val());
+	}
+	//alert if user input is not an interger
 	else{
 		alert("this is not a number");
 	}
