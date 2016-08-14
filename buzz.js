@@ -26,7 +26,13 @@ function counter(num){
 
 //press a button to run the function called counter,
 $("#myButton").click(function(){
+	
+		//prevents default form action of sending input to server
+		event.preventDefault();
 
+		//removes content of all 'ul' elements
+		$('ul').empty();
+	
 	//validate user input 
 	if(parseInt($("#formValue").val())){
 		
